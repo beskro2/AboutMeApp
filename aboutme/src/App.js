@@ -1,27 +1,27 @@
 
 import './App.css';
 import myImage from './IMG_2196 (1).jpeg'
-
-function toggleMenu(){
-  var x = document.getElementById("hamburgerNav-links");
-  if(x.style.display === 'block') {
-    x.style.display = "none";
-  }
-  else{
-    x.style.display = "block";
-  }
-}
+import { useState } from 'react';
 
 function App() {
+
+  const [menuOpen, changeMenuOpen] = useState(false);
+
+function toggleMenu(e){
+  
+ changeMenuOpen(!menuOpen);
+ console.log(menuOpen);
+}
   return (
  
     <div className="App">
+
       <nav id ="desktop-nav">
       <div className="menu-container">
       <div className='title'>
         <t>Ben Eskro</t>
       </div>
-      <div className=''>
+      <div >
         <ul className="nav-links">
           <li><a href='#about'>about</a></li>
           <li><a href='#experience'>experience</a></li>
@@ -31,26 +31,33 @@ function App() {
         </div>
       </div>
       </nav>
- 
+
       <nav id = "hamburger-nav">
         <div className='title'>
           <t>Ben Eskro</t>
         </div>
-        <div className="hamburger-icon" onClick = {toggleMenu}>
-          <span className ="burderSymbol">---</span>
-          <span className ="burderSymbol">---</span>
-          <span className ="burderSymbol">---</span>
-        </div>
-        <div id="hamburgerNav-links">
+      
+        <label class="burger" for="burger" >
+          <input type="checkbox"  checked = {menuOpen} id="burger" onChange={toggleMenu}/>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        {/* */}
+
+       
+     
+      </nav >
+      {menuOpen && 
+        <ul className="hamburgerNav-links">
           <li><a href='#about' onClick = {toggleMenu}>about</a></li>
           <li><a href='#experience' onClick = {toggleMenu}>experience</a></li>
           <li><a href='#projects' onClick = {toggleMenu}>projects</a></li>
           <li><a href='#contact' onClick = {toggleMenu}>contact</a></li>
         
-        </div>
-      </nav>
-      
-       
+        </ul>
+}
+
 <div className='flex-container'> 
 
 <div className='image-container'>
@@ -67,6 +74,14 @@ function App() {
        boardgames with my friends. 
         </p>
       </div>
+</div>
+
+<div className='projects'>
+  
+
+
+
+
 </div>
       
     </div>
