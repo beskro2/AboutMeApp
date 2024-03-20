@@ -2,16 +2,25 @@
 import './App.css';
 import myImage from './IMG_2196 (1).jpeg'
 import { useState } from 'react';
+import {saveAs} from 'file-saver';
+
 
 function App() {
 
   const [menuOpen, changeMenuOpen] = useState(false);
 
 function toggleMenu(e){
-  
  changeMenuOpen(!menuOpen);
  console.log(menuOpen);
 }
+ 
+const handleDownload = () => {
+  const resumeUrl = '/Resume%206.4.pdf';
+  console.log('attemp to download:', resumeUrl);
+  saveAs(resumeUrl,'Bens_Resume.pdf');
+
+};
+
   return (
  
     <div className="App">
@@ -58,7 +67,7 @@ function toggleMenu(e){
         </ul>
 }
 
-<div className='flex-container'> 
+<div className='about-container'> 
 
 <div className='image-container'>
   <img src={myImage} className="circle-image"alt="professional headshot" />
@@ -76,14 +85,14 @@ function toggleMenu(e){
       </div>
 </div>
 
-<div className='projects'>
+<div className='projects-container'>
   
 
 
 
 
 </div>
-      
+      <button className="resumeBTN" onClick ={handleDownload}>Download Resume </button>
     </div>
   );
 }
