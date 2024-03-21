@@ -5,6 +5,13 @@
 .App {
   text-align:center;
   font-family: 'poppins', sans-serif;
+ /* 
+ 
+ background-color: #e8e8e8; 
+ 
+
+
+ */
 }
  htnl{
   scroll-behavior: smooth;
@@ -36,7 +43,7 @@ font-size: 2rem;
   font-size: 1.5rem;
  }
  
- a{
+ .nav-link{
   color:black;
   text-decoration: none;
   text-decoration-color: white;
@@ -44,7 +51,7 @@ font-size: 2rem;
   
  }
 
- a:hover{
+ .nav-link:hover{
   color:grey;
   text-decoration: underline;
   text-underline-offset: .75rem;
@@ -204,7 +211,119 @@ font-size: 2rem;
 
 }
 
+.linkes{
+  display: flex;
+  justify-content: space-around;
+}
 .resumeBTN{
-  
+  position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: white;
+ background-color: black;
 }
 
+.resumeBTN:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resumeBTN:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resumeBTN::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+.resumeBTN::after {
+ background-color: #000000;
+}
+
+.resumeBTN:hover::after {
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
+ /* github button*/
+ .Btn {
+ margin: 30px;
+  width: 58px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background: #1a1919;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.bigbutton{
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  padding-right: calc(25%);
+}
+.smallbuttons{
+  display:flex;
+  justify-content: flex-end;
+  height:100%;
+  padding-right: calc(25%);
+}
