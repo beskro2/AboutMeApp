@@ -1,9 +1,17 @@
 
 import './App.css';
-import myImage from './IMG_2196 (1).jpeg'
+import myImage from 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2196 (1).jpeg'
 import { useState } from 'react';
 import {saveAs} from 'file-saver';
+import ImageSlider from "./ImageSlider.js" 
 
+const slides = [
+  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_0394.jpg' , title: 'image1'},
+  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_0570.jpg' , title: 'image2'},
+  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2145.JPG' , title: 'image3'},
+  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2437.jpg' , title: 'image4'},
+  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_3853.JPG' , title: 'image5'},
+ ]
 
 function App() {
 
@@ -25,6 +33,7 @@ const handleDownload = () => {
  
     <div className="App">
 
+<div className="first-section">
       <nav id ="desktop-nav">
       <div className="menu-container">
       <div className='title'>
@@ -129,21 +138,26 @@ const handleDownload = () => {
 
 </div>
 
-<div className='projects-container'>
-  
+</div>
 
 
 
+<div className='aboutme-container'> 
+<div className='slidercontainer'>
+<ImageSlider slides={slides}/>
 
 </div>
 
-<div>
 
 
 
- 
 
-</div>
+
+
+
+
+
+{/* 
 <div className='bio'>
         <p>
         Hello and welcome to my website. I’m Ben Eskro, a recent collage graduate with a passion for solving real
@@ -154,7 +168,8 @@ const handleDownload = () => {
        boardgames with my friends. 
         </p>
       </div>
-<div className='classexperionce'> test</div>
+      */}
+</div>
     </div>
   );
 }
