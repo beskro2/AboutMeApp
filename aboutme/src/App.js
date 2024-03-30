@@ -1,17 +1,10 @@
 
 import './App.css';
-import myImage from 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2196 (1).jpeg'
+import myImage from './Images/IMG_2196 (1).jpeg';
 import { useState } from 'react';
 import {saveAs} from 'file-saver';
 import ImageSlider from "./ImageSlider.js" 
-
-const slides = [
-  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_0394.jpg' , title: 'image1'},
-  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_0570.jpg' , title: 'image2'},
-  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2145.JPG' , title: 'image3'},
-  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_2437.jpg' , title: 'image4'},
-  { url: 'C:/Users/eskro/OneDrive/Desktop/AboutMeApp/aboutme/src/Images/IMG_3853.JPG' , title: 'image5'},
- ]
+import {slides} from './data.js';
 
 function App() {
 
@@ -24,7 +17,7 @@ function toggleMenu(e){
  
 const handleDownload = () => {
   const resumeUrl = '/Resume%206.4.pdf';
-  console.log('attemp to download:', resumeUrl);
+  console.log('attempt to download:', resumeUrl);
   saveAs(resumeUrl,'Bens_Resume.pdf');
 
 };
@@ -81,7 +74,7 @@ const handleDownload = () => {
 <div className='intro-container'> 
 
 <div className='image-container'>
-  <img src={myImage} className="circle-image"alt="professional headshot" />
+  <img src={myImage} className="circle-image" alt="professional headshot" />
 </div>
 
 
@@ -144,7 +137,8 @@ const handleDownload = () => {
 
 <div className='aboutme-container'> 
 <div className='slidercontainer'>
-<ImageSlider slides={slides}/>
+
+<ImageSlider images={slides}/>
 
 </div>
 

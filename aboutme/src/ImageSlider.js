@@ -1,14 +1,24 @@
-import { useState } from "react";
+import './ImageSlider.css';
 
-const ImageSlider = ({slides}) => {
-    const[currentIndex,setCurrentUSer] = useState(0)
-    return(
+
+function ImageSlider({images}) {
+  return (
     
-        <div>
-            <div className="test"> </div>
+    <div className='carousel'>
+        <div className='carousel_wrapper'>
+      {images.map((slide,index)=>{
+        return ( 
+        <div key={index} className={index==2 ? "carousel_card carousel_card-active" : "carousel_card"}>
+           <img src={slide.image} className="sliderimage" alt={slide.title}/>
+           <div className="card_overlay">
+            <h2 className="card-title">{slide.title}</h2>
+           </div>
         </div>
-    )
+        );
+      })}
+      </div>
+    </div>
+  )
 }
 
-export default ImageSlider;
-
+export default ImageSlider
