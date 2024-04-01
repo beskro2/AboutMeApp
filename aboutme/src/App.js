@@ -136,6 +136,7 @@ const handleDownload = () => {
 
 
 <div className='aboutme-container'> 
+
 <div className='slidercontainer'>
 
 <ImageSlider images={slides}/>
