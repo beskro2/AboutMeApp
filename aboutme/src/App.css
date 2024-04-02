@@ -344,17 +344,20 @@ font-size: 2rem;
 
 .textone{
   font-size: large;
+  cursor: default;
   }
 
 
 .texttwo{
   font-size: 3rem;
   font-weight: 600;
+  cursor: default;
 }
 
 .textthree{
   margin-bottom:20px;
   font-size: large;
+  cursor: default;
 }
 
 .first-section{
@@ -391,4 +394,11 @@ font-size: 2rem;
   background: #e0e0e0;
   box-shadow: 15px 15px 30px #f5f1f1,
              -15px -15px 30px #ffffff;
+}
+
+
+.section_label2{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 30px;
 }

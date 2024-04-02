@@ -61,14 +61,14 @@
     font-size: 40px;
     top:50%;
     transform:translate(0,-50%);
-    background-color: darkgray;
+    background-color: aliceblue;
     display:flex;
     justify-content: center;
     align-items: center;
     width:30px;
-    height:30px;
+    height:25px;
     border-radius: 50% ;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
     cursor: pointer;
 }
 .carousel_arrow_left{

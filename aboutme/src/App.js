@@ -34,10 +34,10 @@ const handleDownload = () => {
       </div>
       <div >
         <ul className="nav-links">
-          <li><a className="nav-link" href='#about'>about</a></li>
-          <li><a className="nav-link" href='#experience'>experience</a></li>
-          <li><a className="nav-link" href='#projects'>projects</a></li>
-          <li><a className="nav-link" href='#contact'>contact</a></li>
+          <li><a className="nav-link" href='#about'>About</a></li>
+          <li><a className="nav-link" href='#experience'>Experience</a></li>
+          <li><a className="nav-link" href='#projects'>Projects</a></li>
+          <li><a className="nav-link" href='#contact'>Contact</a></li>
         </ul>
         </div>
       </div>
@@ -61,10 +61,10 @@ const handleDownload = () => {
       </nav >
       {menuOpen && 
         <ul className="hamburgerNav-links">
-          <li><a href='#about' onClick = {toggleMenu}>about</a></li>
-          <li><a href='#experience' onClick = {toggleMenu}>experience</a></li>
-          <li><a href='#projects' onClick = {toggleMenu}>projects</a></li>
-          <li><a href='#contact' onClick = {toggleMenu}>contact</a></li>
+          <li><a href='#about' onClick = {toggleMenu}>About</a></li>
+          <li><a href='#experience' onClick = {toggleMenu}>Experience</a></li>
+          <li><a href='#projects' onClick = {toggleMenu}>Projects</a></li>
+          <li><a href='#contact' onClick = {toggleMenu}>Contact</a></li>
         
         </ul>
 }
@@ -139,6 +139,7 @@ const handleDownload = () => {
 
 <div className='slidercontainer'>
 
+<t className='section_label2'>About Me</t>
 <ImageSlider images={slides}/>
 
 </div>
