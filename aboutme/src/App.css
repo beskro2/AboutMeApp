@@ -204,117 +204,67 @@ font-size: 2rem;
   justify-content: space-around;
 }
 
-.resumeBTN {
-  padding: 15px 20px;
-  font-size: 16px;
-  background: transparent;
+/*larger buttons */
+.largebtn{
+  width:210px;
+  height:46px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
   border: none;
-  position: relative;
-  color: #f0f0f0;
-  z-index: 1;
-  width: 200px; 
-  text-align: center;
-}
-
-.resumeBTN::after,
-.resumeBTN::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.resumeBTN::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
-}
-
-.resumeBTN::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.resumeBTN:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.resumeBTN:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.resumeBTN:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
-
-
- /* github button*/
- .Btn {
-
-  width: 58px;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  /* overflow: hidden; */
-  border-radius: 7px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
-  transition: all .3s;
-  
+  outline: none;
 }
 
-.svgContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  backdrop-filter: blur(0px);
-  letter-spacing: 0.8px;
-  border-radius: 10px;
-  transition: all .3s;
-  border: 1px solid rgba(0, 0, 0, 0.466);
+.largebtn:hover {
+  background-color: white;
+  border: solid;
+  border-width: 2px;
+  color: black;
+ 
 }
 
-.BG {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 45px;
-  background: black;
-  z-index: 0;
-  border-radius: 10px;
-  pointer-events: none;
-  transition: all .3s;
+/*smaller buttons */
+.smallbtn{
+  width:46px;
+  height:46px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
-.Btn:hover .BG {
-  transform: rotate(35deg);
-  transform-origin: bottom;
+.smallbtn:hover {
+  background-color: white;
+  border: 2px solid black;
 }
+ .svg:hover{
+  fill:black;
+ }
 
-.Btn:hover .svgContainer {
-  background-color: rgba(156, 156, 156, 0.466);
-  backdrop-filter: blur(4px);
-}
+ .svgContainer svg path{
+ fill:white;
+ transition:fill 0.3s; 
+ }
+
+ .smallbtn:hover .svgContainer svg path {
+  fill:black;
+ }
+
 
 .upperbutton{
   width:300px;
@@ -373,10 +323,17 @@ font-size: 2rem;
   display:flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   
   
 }
 
+.organization{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+}
 .slidercontainer{
  
   display:flex;
@@ -421,8 +378,3 @@ font-size: 2rem;
   margin: 20px;
 }
 
-.organization{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
