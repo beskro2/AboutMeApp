@@ -3,6 +3,7 @@ import myImage from "./Images/IMG_2196 (1).jpeg";
 import { useState } from "react";
 import { saveAs } from "file-saver";
 import ImageSlider from "./ImageSlider.js";
+import ProjectCard from "./ProjectCard.js";
 import { slides } from "./data.js";
 
 function App() {
@@ -201,6 +202,7 @@ function App() {
           </div>
         </div>
         <div className="projectContainer">
+          <ProjectCard> </ProjectCard>
           <div className="projectCard">
             {/*move this to a component to call repeatedly*/}
             <h2>Dungeons & Dragons Web applications</h2>
