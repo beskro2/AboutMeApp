@@ -20,6 +20,15 @@ function App() {
     saveAs(resumeUrl, "Bens_Resume.pdf");
   };
 
+  const title = "Dungeons & Dragons Web applications";
+  const description =
+    "Created a React web application that allows Dungeons and Dragons players to roll dice virtually as well as share story notes and game items";
+  const test = [
+    "Familiarize myself with react framework",
+    "Practice creating and manipulating components",
+    "Create solution",
+  ];
+
   return (
     <div className="App">
       <div className="first-section">
@@ -202,26 +211,11 @@ function App() {
           </div>
         </div>
         <div className="projectContainer">
-          <ProjectCard> </ProjectCard>
-          <div className="projectCard">
-            {/*move this to a component to call repeatedly*/}
-            <h2>Dungeons & Dragons Web applications</h2>
-            <h3>Description</h3>
-            <p>
-              Created a React web application that allows Dungeons and Dragons
-              players to roll dice virtually as well as share story notes and
-              game items
-            </p>
-            <h3>Goal</h3>
-            <ul>
-              <li>Familurise myself with react framework</li>
-              <li>Practice creating and manipulating components</li>
-              <li>Create solution</li>
-            </ul>
-            <div className="test">
-              <button className="largebtn">github</button>
-            </div>
-          </div>
+          <ProjectCard
+            title={title}
+            description={description}
+            goal={test}
+          ></ProjectCard>
         </div>
       </div>
     </div>
