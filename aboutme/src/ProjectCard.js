@@ -9,13 +9,11 @@ function ProjectCard({ title, description, goal }) {
       <h3>Description</h3>
       <p>{description}</p>
       <h3>Goal</h3>
-
       <ul>
         {goal.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
-
       <div className="test">
         <button className="largebtn">github</button>
       </div>

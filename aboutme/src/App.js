@@ -20,15 +20,22 @@ function App() {
     saveAs(resumeUrl, "Bens_Resume.pdf");
   };
 
-  const title = "Dungeons & Dragons Web applications";
-  const description =
+  const DnDtitle = "Dungeons & Dragons Web applications";
+  const DnDdescription =
     "Created a React web application that allows Dungeons and Dragons players to roll dice virtually as well as share story notes and game items";
-  const test = [
+  const DnDgoals = [
     "Familiarize myself with react framework",
     "Practice creating and manipulating components",
-    "Create solution",
+    "Create solution for commen Dungeons and Dragons problems",
   ];
-
+  const Captitle = "Good Day Saftey App";
+  const Capdescription =
+    "Created a .net MAUI Mobil aplication that allowed construction workers to anonymously report safety concerns without fear or repercussions from their supervisors";
+  const Capgoals = [
+    "Practice .net Moui framework",
+    "Create Azure API",
+    "Create solution for construction workers",
+  ];
   return (
     <div className="App">
       <div className="first-section">
@@ -212,9 +219,14 @@ function App() {
         </div>
         <div className="projectContainer">
           <ProjectCard
-            title={title}
-            description={description}
-            goal={test}
+            title={DnDtitle}
+            description={DnDdescription}
+            goal={DnDgoals}
+          ></ProjectCard>
+          <ProjectCard
+            title={Captitle}
+            description={Capdescription}
+            goal={Capgoals}
           ></ProjectCard>
         </div>
       </div>
