@@ -26,7 +26,7 @@ function App() {
   const DnDgoals = [
     "Familiarize myself with react framework",
     "Practice creating and manipulating components",
-    "Create solution for commen Dungeons and Dragons problems",
+    "Create solution for commen Dungeons ",
   ];
   const Captitle = "Good Day Saftey App";
   const Capdescription =
