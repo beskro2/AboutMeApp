@@ -1,5 +1,4 @@
 .projectCard h2 {
-  background-color: aqua;
   height: 70px;
 }
 .projectCard {
@@ -15,7 +14,7 @@
 .projectCard p {
   display: flex;
   justify-content: baseline;
-  background-color: blue;
+
   height: 100px;
 }
 .projectCard h3 {
