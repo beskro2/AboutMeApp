@@ -5,6 +5,8 @@ import { saveAs } from "file-saver";
 import ImageSlider from "./ImageSlider.js";
 import ProjectCard from "./ProjectCard.js";
 import { slides } from "./data.js";
+import DnDPic from "./Dungeon-and-Dragons-Logo-min.jpg";
+import CapPic from "./user-hard-hat.png";
 
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
@@ -23,19 +25,9 @@ function App() {
   const DnDtitle = "Dungeons & Dragons Web applications";
   const DnDdescription =
     "Created a React web application that allows Dungeons and Dragons players to roll dice virtually as well as share story notes and game items";
-  const DnDgoals = [
-    "Familiarize myself with react framework",
-    "Practice creating and manipulating components",
-    "Create solution for commen Dungeons ",
-  ];
   const Captitle = "Good Day Saftey App";
   const Capdescription =
     "Created a .net MAUI Mobil aplication that allowed construction workers to anonymously report safety concerns without fear or repercussions from their supervisors";
-  const Capgoals = [
-    "Practice .net Moui framework",
-    "Create Azure API",
-    "Create solution for construction workers",
-  ];
   return (
     <div className="App">
       <div className="first-section">
@@ -217,16 +209,17 @@ function App() {
             <p>-paragraph three</p>
           </div>
         </div>
+        <t className="section_label2">My Projects</t>
         <div className="projectContainer">
           <ProjectCard
             title={DnDtitle}
             description={DnDdescription}
-            goal={DnDgoals}
+            picture={DnDPic}
           ></ProjectCard>
           <ProjectCard
             title={Captitle}
             description={Capdescription}
-            goal={Capgoals}
+            picture={CapPic}
           ></ProjectCard>
         </div>
       </div>
