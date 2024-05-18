@@ -411,32 +411,6 @@ p {
   padding: 20px;
 }
 
-.projectCard {
-  box-sizing: border-box;
-  width: 1000px;
-  height: 300px;
-  background-color: white;
-  border: solid 1px black;
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  padding: 20px;
-}
-.projectCard p {
-  display: flex;
-  justify-content: baseline;
-}
-.projectCard h3 {
-  display: flex;
-  justify-content: baseline;
-}
-.projectCard ul {
-  list-style-type: square;
-  list-style-position: inside;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
 .projectContainer {
   display: flex;
   flex-direction: row;

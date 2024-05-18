@@ -223,6 +223,8 @@ function App() {
           ></ProjectCard>
         </div>
       </div>
+
+      <div></div>
     </div>
   );
 }

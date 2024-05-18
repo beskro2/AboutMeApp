@@ -3,13 +3,14 @@
 }
 .projectCard {
   box-sizing: border-box;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 400px;
   background-color: white;
   border: solid 1px black;
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  padding: 20px;
+  margin: 10px;
+  overflow: hidden;
 }
 .projectCard p {
   display: flex;
@@ -37,7 +38,15 @@
   margin: 20px;
 }
 
-.projpic {
-  height: 100px;
-  width: 180px;
+.imagecontainer {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.imagecontainer img {
+  width: 100%;
+  max-height: -webkit-fill-available;
+  object-fit: cover;
 }
