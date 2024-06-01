@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard.js";
 import { slides } from "./data.js";
 import DnDPic from "./Dungeon-and-Dragons-Logo-min.jpg";
 import CapPic from "./user-hard-hat.png";
+import ContactMe from "./ContactMe.js";
 
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
@@ -224,7 +225,11 @@ function App() {
         </div>
       </div>
 
-      <div></div>
+      <div>
+        {" "}
+        <t className="section_label2">Contact Me</t>
+        <ContactMe></ContactMe>
+      </div>
     </div>
   );
 }
