@@ -223,19 +223,16 @@ p {
 
 .smallbtn:hover {
   background-color: white;
+  color: black;
   border: 2px solid black;
 }
-.svg:hover {
-  fill: black;
+.giticon {
+  height: 25px;
+  width: 25px;
 }
-
-.svgContainer svg path {
-  fill: white;
-  transition: fill 0.3s;
-}
-
-.smallbtn:hover .svgContainer svg path {
-  fill: black;
+.linkedicon {
+  height: 20px;
+  width: 20px;
 }
 
 .upperbutton {
@@ -258,8 +255,9 @@ p {
 }
 
 .textone {
-  font-size: large;
+  font-size: 1.5rem;
   cursor: default;
+  font-weight: 500;
 }
 
 .texttwo {
@@ -270,7 +268,8 @@ p {
 
 .textthree {
   margin-bottom: 20px;
-  font-size: large;
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: default;
 }
 
