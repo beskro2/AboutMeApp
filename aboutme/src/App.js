@@ -174,10 +174,12 @@ function App() {
           <div className="slidercontainer">
             <ImageSlider images={slides} />
           </div>
-          <Imagecarosel images={images}></Imagecarosel>
         </div>
       </div>
-
+      <div>
+        test
+        <Imagecarosel images={images}></Imagecarosel>
+      </div>
       <div className="experience-container">
         <t className="section_label2">My Experience</t>
         <div className="class-container">
