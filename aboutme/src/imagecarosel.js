@@ -46,11 +46,11 @@ const Imagecarosel = ({ images }) => {
   };
 
   return (
-    <div>
+    <div className="imageCaroselContainer">
       <button onClick={goToPrevSlide}>Previous</button>
-      <img className="image" src={images[currentIndex1]} alt={"slide"} />
-      <img className="image" src={images[currentIndex2]} alt={"slide"} />
-      <img className="image" src={images[currentIndex3]} alt={"slide"} />
+      <img className="image1" src={images[currentIndex1]} alt={"slide"} />
+      <img className="image2" src={images[currentIndex2]} alt={"slide"} />
+      <img className="image1" src={images[currentIndex3]} alt={"slide"} />
       <button onClick={goToNextSlide}>Previous</button>
     </div>
   );

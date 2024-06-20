@@ -1,4 +1,20 @@
-.image {
-  height: 100px;
-  width: 100px;
+.imageCaroselContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.image1 {
+  height: 266px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 17px;
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+}
+.image2 {
+  height: 333px;
+  width: 500px;
+  margin: 20px;
+  border-radius: 17px;
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
 }

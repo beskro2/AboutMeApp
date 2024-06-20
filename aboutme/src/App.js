@@ -179,6 +179,19 @@ function App() {
       <div>
         test
         <Imagecarosel images={images}></Imagecarosel>
+        <div className="bio">
+          <p>
+            Hello and welcome to my website. I’m Ben Eskro, a recent college
+            graduate with a passion for solving real world problems with
+            software solutions. Through my studies at North Dakota State
+            University, I developed a passion for creating user friendly
+            applications and honed my skills in front-end software development.
+            My evolution as a developer can be attributed to my love for
+            learning new things and my persistance in the face of failure. When
+            I’m not coding, you can find me gearing up to explore the outdoors
+            or playing boardgames with my friends.
+          </p>
+        </div>
       </div>
       <div className="experience-container">
         <t className="section_label2">My Experience</t>
