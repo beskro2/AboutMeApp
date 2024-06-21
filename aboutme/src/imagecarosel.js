@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./imagecarosel.css";
+
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
 const Imagecarosel = ({ images }) => {
   const [currentIndex1, setCurrentIndex1] = useState(0);
   const [currentIndex2, setCurrentIndex2] = useState(1);
@@ -47,11 +50,16 @@ const Imagecarosel = ({ images }) => {
 
   return (
     <div className="imageCaroselContainer">
-      <button onClick={goToPrevSlide}>Previous</button>
+      <button class="caroselbtn" onClick={goToPrevSlide}>
+        <FaArrowLeft className="arrowIcon" />
+      </button>
+
       <img className="image1" src={images[currentIndex1]} alt={"slide"} />
       <img className="image2" src={images[currentIndex2]} alt={"slide"} />
       <img className="image1" src={images[currentIndex3]} alt={"slide"} />
-      <button onClick={goToNextSlide}>Previous</button>
+      <button class="caroselbtn" onClick={goToNextSlide}>
+        <FaArrowRight className="arrowIcon" />
+      </button>
     </div>
   );
 };

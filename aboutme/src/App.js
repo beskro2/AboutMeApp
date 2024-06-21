@@ -130,11 +130,7 @@ function App() {
                   Download Resume
                 </button>
 
-                <a
-                  href="https://github.com/beskro2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/beskro2" target="_blank">
                   <button class="smallbtn">
                     <FaGithub className="giticon" />
                   </button>
@@ -142,10 +138,14 @@ function App() {
               </div>
 
               <div className="lowerbuttons">
-                <button class="smallbtn">
-                  <FaLinkedinIn className="linkedicon" />
-                </button>
-
+                <a
+                  href="https://www.linkedin.com/in/ben-eskro/"
+                  target="_blank"
+                >
+                  <button class="smallbtn">
+                    <FaLinkedinIn className="linkedicon" />
+                  </button>
+                </a>
                 <button className="largebtn">Contact Me</button>
               </div>
             </div>
@@ -155,8 +155,8 @@ function App() {
 
       <div className="aboutme-container">
         <t className="section_label2">About Me</t>
-
-        <div className="organization">
+        <div>
+          <Imagecarosel images={images}></Imagecarosel>
           <div className="bio">
             <p>
               Hello and welcome to my website. I’m Ben Eskro, a recent college
@@ -170,29 +170,9 @@ function App() {
               explore the outdoors or playing boardgames with my friends.
             </p>
           </div>
+        </div>
+      </div>
 
-          <div className="slidercontainer">
-            <ImageSlider images={slides} />
-          </div>
-        </div>
-      </div>
-      <div>
-        test
-        <Imagecarosel images={images}></Imagecarosel>
-        <div className="bio">
-          <p>
-            Hello and welcome to my website. I’m Ben Eskro, a recent college
-            graduate with a passion for solving real world problems with
-            software solutions. Through my studies at North Dakota State
-            University, I developed a passion for creating user friendly
-            applications and honed my skills in front-end software development.
-            My evolution as a developer can be attributed to my love for
-            learning new things and my persistance in the face of failure. When
-            I’m not coding, you can find me gearing up to explore the outdoors
-            or playing boardgames with my friends.
-          </p>
-        </div>
-      </div>
       <div className="experience-container">
         <t className="section_label2">My Experience</t>
         <div className="class-container">
