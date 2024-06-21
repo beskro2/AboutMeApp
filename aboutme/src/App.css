@@ -286,7 +286,7 @@ p {
   align-items: center;
 }
 
-.bio {
+.biocard {
   box-sizing: border-box;
   width: 800px;
   height: 300px;
@@ -305,12 +305,13 @@ p {
   color: black;
   padding: 7px;
 }
-.bio p {
+.biocard p {
   font-size: 21px;
   line-height: 30px;
   cursor: default;
 }
-
+.bioContainer {
+}
 .aboutme-container {
   display: flex;
   flex-direction: column;

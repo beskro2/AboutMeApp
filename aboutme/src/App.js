@@ -157,7 +157,9 @@ function App() {
         <t className="section_label2">About Me</t>
         <div>
           <Imagecarosel images={images}></Imagecarosel>
-          <div className="bio">
+        </div>
+        <div className="biocontainer">
+          <div className="biocard">
             <p>
               Hello and welcome to my website. I’m Ben Eskro, a recent college
               graduate with a passion for solving real world problems with
