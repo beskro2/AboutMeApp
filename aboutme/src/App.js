@@ -11,6 +11,7 @@ import ContactMe from "./ContactMe.js";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Imagecarosel from "./imagecarosel.js";
+import skills from "./skills.js";
 
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
@@ -179,16 +180,13 @@ function App() {
         <t className="section_label2">My Experience</t>
         <div className="class-container">
           <div className="classCard">
-            <t> class Name1 </t>
+            <t> Coding Skills </t>
+            <skills title="test"> </skills>
             <p>-paragraph one</p>
           </div>
           <div className="classCard">
-            <t> class Name2 </t>
+            <t> Professional skills </t>
             <p>-paragraph two</p>
-          </div>
-          <div className="classCard">
-            <t> class Name3 </t>
-            <p>-paragraph three</p>
           </div>
         </div>
         <t className="section_label2">My Projects</t>
