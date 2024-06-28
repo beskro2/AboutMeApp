@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: space-around;
   width: 500px;
+  border-radius: 17px;
+  padding: 10px;
 }
 .texticongroup {
   display: flex;
