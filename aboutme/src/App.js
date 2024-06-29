@@ -2,16 +2,15 @@ import "./App.css";
 import myImage from "./Images/IMG_2196 (1).jpeg";
 import { useState } from "react";
 import { saveAs } from "file-saver";
-import ImageSlider from "./ImageSlider.js";
 import ProjectCard from "./ProjectCard.js";
-import { slides, images } from "./data.js";
+import { images } from "./data.js";
 import DnDPic from "./Dungeon-and-Dragons-Logo-min.jpg";
 import CapPic from "./user-hard-hat.png";
 import ContactMe from "./ContactMe.js";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Imagecarosel from "./imagecarosel.js";
-import skills from "./skills.js";
+import Skills from "./Skills.js";
 
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
@@ -181,7 +180,7 @@ function App() {
         <div className="class-container">
           <div className="classCard">
             <t> Coding Skills </t>
-            <skills title="test"> </skills>
+            <Skills title="test"></Skills>
             <p>-paragraph one</p>
           </div>
           <div className="classCard">
