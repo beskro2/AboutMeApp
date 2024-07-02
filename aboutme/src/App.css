@@ -384,7 +384,7 @@ p {
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .projectContainer {
@@ -393,4 +393,12 @@ p {
   justify-content: center;
   align-items: center;
   margin: 20px;
+}
+
+.skillsbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto;
+  row-gap: 50px;
 }

@@ -32,6 +32,18 @@ function App() {
   const Captitle = "Good Day Saftey App";
   const Capdescription =
     "Created a .net MAUI Mobil aplication that allowed construction workers to anonymously report safety concerns without fear or repercussions from their supervisors";
+  const codeskills = [
+    "HTML",
+    "JavaScript",
+    "CSS",
+    "React",
+    "Angular",
+    "Java",
+    "Python",
+    "Git",
+    "Visual Studio",
+  ];
+  const professionalskills = ["Microsoft 360", ""];
   return (
     <div className="App">
       <div className="first-section">
@@ -180,8 +192,11 @@ function App() {
         <div className="class-container">
           <div className="classCard">
             <t> Coding Skills </t>
-            <Skills title="test"></Skills>
-            <p>-paragraph one</p>
+            <div className="skillsbox">
+              {codeskills.map((item, index) => (
+                <Skills title={item} key={index}></Skills>
+              ))}
+            </div>
           </div>
           <div className="classCard">
             <t> Professional skills </t>
