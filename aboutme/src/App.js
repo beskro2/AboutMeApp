@@ -43,7 +43,18 @@ function App() {
     "Git",
     "Visual Studio",
   ];
-  const professionalskills = ["Microsoft 360", ""];
+
+  const professionalskills = [
+    "Microsoft 360",
+    "Google Suite",
+    "Slack",
+    "Communication",
+    "Problem Solving",
+    "Attention to Detail",
+    "Teamwork",
+    "Time Management",
+    "Adaptability",
+  ];
   return (
     <div className="App">
       <div className="first-section">
@@ -200,7 +211,11 @@ function App() {
           </div>
           <div className="classCard">
             <t> Professional skills </t>
-            <p>-paragraph two</p>
+            <div className="skillsbox">
+              {professionalskills.map((item, index) => (
+                <Skills title={item} key={index}></Skills>
+              ))}
+            </div>
           </div>
         </div>
         <t className="section_label2">My Projects</t>
