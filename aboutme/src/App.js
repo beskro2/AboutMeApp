@@ -11,6 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Imagecarosel from "./imagecarosel.js";
 import Skills from "./Skills.js";
+import Pskills from "./ProfessionalSkills.js";
 
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
@@ -25,7 +26,13 @@ function App() {
     console.log("attempt to download:", resumeUrl);
     saveAs(resumeUrl, "Bens_Resume.pdf");
   };
+  /*Technical Skills
 
+Languages: Java, JavaScript, HTML/CSS, Python, C#
+Frameworks/Tools: React, Angular, .NET, GitHub, Visual Studio Code
+Platforms: Microsoft Azure, Workday, Slack
+Software: Microsoft Office 365, Google Suite
+*/
   const DnDtitle = "Dungeons & Dragons Web applications";
   const DnDdescription =
     "Created a React web application that allows Dungeons and Dragons players to roll dice virtually as well as share story notes and game items";
@@ -60,9 +67,8 @@ function App() {
       <div className="first-section">
         <nav id="desktop-nav">
           <div className="menu-container">
-            <div className="title">
-              <t>Ben Eskro</t>
-            </div>
+            <h1 className="title">Ben Eskro</h1>
+
             <div>
               <ul className="nav-links">
                 <li>
@@ -92,7 +98,7 @@ function App() {
 
         <nav id="hamburger-nav">
           <div className="title">
-            <t>Ben Eskro</t>
+            <h1>Ben Eskro</h1>
           </div>
 
           <label class="burger" for="burger">
@@ -176,33 +182,32 @@ function App() {
         </div>
       </div>
 
-      <div className="aboutme-container">
-        <t className="section_label2">About Me</t>
+      <div id="about" className="aboutme-container">
+        <h1 className="section_label2">About Me</h1>
         <div>
           <Imagecarosel images={images}></Imagecarosel>
         </div>
-        <div className="biocontainer">
-          <div className="biocard">
-            <p>
-              Hello and welcome to my website. I’m Ben Eskro, a recent college
-              graduate with a passion for solving real world problems with
-              software solutions. Through my studies at North Dakota State
-              University, I developed a passion for creating user friendly
-              applications and honed my skills in front-end software
-              development. My evolution as a developer can be attributed to my
-              love for learning new things and my persistance in the face of
-              failure. When I’m not coding, you can find me gearing up to
-              explore the outdoors or playing boardgames with my friends.
-            </p>
-          </div>
+
+        <div className="biocard">
+          <p>
+            Hello and welcome to my website. I’m Ben Eskro, a recent college
+            graduate with a passion for solving real world problems with
+            software solutions. Through my studies at North Dakota State
+            University, I developed a passion for creating user friendly
+            applications and honed my skills in front-end software development.
+            My evolution as a developer can be attributed to my love for
+            learning new things and my persistance in the face of failure. When
+            I’m not coding, you can find me gearing up to explore the outdoors
+            or playing boardgames with my friends.
+          </p>
         </div>
       </div>
 
-      <div className="experience-container">
-        <t className="section_label2">My Experience</t>
+      <div id="experience" className="experience-container">
+        <h1 className="section_label2">My Experience</h1>
         <div className="class-container">
           <div className="classCard">
-            <t> Coding Skills </t>
+            <h1> Coding Skills </h1>
             <div className="skillsbox">
               {codeskills.map((item, index) => (
                 <Skills title={item} key={index}></Skills>
@@ -210,15 +215,18 @@ function App() {
             </div>
           </div>
           <div className="classCard">
-            <t> Professional skills </t>
+            <h1> Professional skills </h1>
             <div className="skillsbox">
               {professionalskills.map((item, index) => (
-                <Skills title={item} key={index}></Skills>
+                <Pskills title={item} key={index}></Pskills>
               ))}
             </div>
           </div>
         </div>
-        <t className="section_label2">My Projects</t>
+      </div>
+
+      <div id="projects" className="project-container">
+        <h1 className="section_label2">My Projects</h1>
         <div className="projectContainer">
           <ProjectCard
             title={DnDtitle}
@@ -235,7 +243,9 @@ function App() {
 
       <div>
         {" "}
-        <t className="section_label2">Contact Me</t>
+        <h1 id="contact" className="section_label2">
+          Contact Me
+        </h1>
         <ContactMe></ContactMe>
       </div>
     </div>

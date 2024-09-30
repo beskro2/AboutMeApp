@@ -1,0 +1,16 @@
+.skillsicon {
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
+}
+.skillscontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.SkillName {
+  flex-grow: 1;
+  margin: 0;
+}

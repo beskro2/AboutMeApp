@@ -22,6 +22,7 @@ p {
 
 .title {
   font-size: 2rem;
+  font-weight: 400;
 }
 .title:hover {
   cursor: default;
@@ -137,10 +138,10 @@ p {
 }
 
 .intro-container {
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 .App-header {
@@ -275,6 +276,12 @@ p {
 
 /*aboutme section*/
 
+.aboutme-container {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .organization {
   display: flex;
   align-items: center;
@@ -288,12 +295,10 @@ p {
 
 .biocard {
   box-sizing: border-box;
-  width: 800px;
-  height: 300px;
-  background: white;
-  border: 1px solid black;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
+  width: 1020px;
+  height: 250px;
+  background: white /*#e8e8e8*/;
+  border: 3px solid grey;
   border-radius: 17px;
   text-align: center;
   cursor: default;
@@ -302,28 +307,20 @@ p {
   align-items: center;
   justify-content: center;
   user-select: none;
-  color: black;
   padding: 7px;
 }
 .biocard p {
   font-size: 21px;
   line-height: 30px;
+  font-weight: 500;
   cursor: default;
-}
-.bioContainer {
-}
-.aboutme-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  margin-bottom: 200px;
+  color: rgb(0, 0, 0);
 }
 
 .section_label2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1300px) {
@@ -359,14 +356,12 @@ p {
   }
 }
 
-.section_label2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-
 /*experience section*/
-
+.experience-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .class-container {
   display: flex;
   flex-direction: row;
@@ -386,7 +381,12 @@ p {
   border-radius: 17px;
   padding: 50px;
 }
-
+/*project section*/
+.project-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .projectContainer {
   display: flex;
   flex-direction: row;
