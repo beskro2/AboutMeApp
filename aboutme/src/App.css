@@ -357,6 +357,14 @@ p {
 }
 
 /*experience section*/
+
+.skillslabel {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: default;
+  margin-bottom: 40px;
+}
+
 .experience-container {
   height: 100vh;
   display: flex;

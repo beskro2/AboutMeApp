@@ -207,7 +207,7 @@ Software: Microsoft Office 365, Google Suite
         <h1 className="section_label2">My Experience</h1>
         <div className="class-container">
           <div className="classCard">
-            <h1> Coding Skills </h1>
+            <h1 className="skillslabel"> Coding Skills </h1>
             <div className="skillsbox">
               {codeskills.map((item, index) => (
                 <Skills title={item} key={index}></Skills>
@@ -215,7 +215,7 @@ Software: Microsoft Office 365, Google Suite
             </div>
           </div>
           <div className="classCard">
-            <h1> Professional skills </h1>
+            <h1 className="skillslabel"> Professional skills </h1>
             <div className="skillsbox">
               {professionalskills.map((item, index) => (
                 <Pskills title={item} key={index}></Pskills>
