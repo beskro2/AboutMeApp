@@ -1,5 +1,6 @@
 .projectCard h2 {
-  height: 70px;
+  height: 40px;
+  font-size: 130%;
 }
 .projectCard {
   box-sizing: border-box;
@@ -14,8 +15,11 @@
 }
 .projectCard p {
   display: flex;
-  justify-content: baseline;
-
+  justify-content: start;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   height: 100px;
 }
 .projectCard h3 {

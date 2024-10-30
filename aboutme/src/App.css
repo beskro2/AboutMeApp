@@ -362,7 +362,7 @@ p {
   font-size: 1.5rem;
   font-weight: 600;
   cursor: default;
-  margin-bottom: 40px;
+  padding: 30px;
 }
 
 .experience-container {
@@ -387,7 +387,9 @@ p {
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 /*project section*/
 .project-container {

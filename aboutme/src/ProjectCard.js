@@ -1,7 +1,7 @@
 import "./ProjectCard.css";
 import React from "react";
 
-function ProjectCard({ title, description, picture }) {
+function ProjectCard({ title, description, picture, link }) {
   return (
     <div className="projectCard">
       <div className="imagecontainer">
@@ -12,7 +12,9 @@ function ProjectCard({ title, description, picture }) {
       <p>{description}</p>
 
       <div className="test">
-        <button className="largebtn">github</button>
+        <a href={link} target="_blank">
+          <button className="largebtn">github</button>
+        </a>
       </div>
     </div>
   );

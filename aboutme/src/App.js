@@ -6,6 +6,8 @@ import ProjectCard from "./ProjectCard.js";
 import { images } from "./data.js";
 import DnDPic from "./Dungeon-and-Dragons-Logo-min.jpg";
 import CapPic from "./user-hard-hat.png";
+import MessagePic from "./Images/message-image.webp";
+import image3 from "./Images/IMG_5186.jpg";
 import ContactMe from "./ContactMe.js";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -33,12 +35,18 @@ Frameworks/Tools: React, Angular, .NET, GitHub, Visual Studio Code
 Platforms: Microsoft Azure, Workday, Slack
 Software: Microsoft Office 365, Google Suite
 */
-  const DnDtitle = "Dungeons & Dragons Web applications";
+  const DnDtitle = "Dungeons & Dragons App";
   const DnDdescription =
-    "Created a React web application that allows Dungeons and Dragons players to roll dice virtually as well as share story notes and game items";
-  const Captitle = "Good Day Saftey App";
+    "React Web Application Enabling Dungeons and Dragons players to roll dice virtually as well as share story notes, game items and character information.";
+  const DnDLink = "https://github.com/beskro2/DnD_project";
+  const Captitle = "Good Day Safety App";
   const Capdescription =
-    "Created a .net MAUI Mobil aplication that allowed construction workers to anonymously report safety concerns without fear or repercussions from their supervisors";
+    "Mobil application enabling anonymous Safety Hazard reports for construction workers. Project includes a .Net Maui front End and Azure Backend.";
+  const CapLink = "https://github.com/aehrmantraut/GoodDaySafetyApp";
+  const MessageTitle = "Social Media Blog API";
+  const MessageDescription =
+    "Backend to a hypothetical social media app. Application Includes endpoint creation, data persistence, and conventional data manipulation logic.";
+  const MessageLink = "https://github.com/beskro2/beskro2-pep-spring-project";
   const codeskills = [
     "HTML",
     "JavaScript",
@@ -46,16 +54,16 @@ Software: Microsoft Office 365, Google Suite
     "React",
     "Angular",
     "Java",
-    "Python",
+    "SQL",
     "Git",
-    "Visual Studio",
+    "Spring",
   ];
-
+  //zoom git hub git lab
   const professionalskills = [
     "Microsoft 360",
     "Google Suite",
     "Slack",
-    "Communication",
+    "Visual Studios",
     "Problem Solving",
     "Attention to Detail",
     "Teamwork",
@@ -232,11 +240,19 @@ Software: Microsoft Office 365, Google Suite
             title={DnDtitle}
             description={DnDdescription}
             picture={DnDPic}
+            link={DnDLink}
           ></ProjectCard>
           <ProjectCard
             title={Captitle}
             description={Capdescription}
             picture={CapPic}
+            link={CapLink}
+          ></ProjectCard>
+          <ProjectCard
+            title={MessageTitle}
+            description={MessageDescription}
+            picture={MessagePic}
+            link={MessageLink}
           ></ProjectCard>
         </div>
       </div>
