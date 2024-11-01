@@ -192,10 +192,6 @@ Software: Microsoft Office 365, Google Suite
 
       <div id="about" className="aboutme-container">
         <h1 className="section_label2">About Me</h1>
-        <div>
-          <Imagecarosel images={images}></Imagecarosel>
-        </div>
-
         <div className="biocard">
           <p>
             Hello and welcome to my website. I’m Ben Eskro, a recent college
@@ -208,6 +204,9 @@ Software: Microsoft Office 365, Google Suite
             I’m not coding, you can find me gearing up to explore the outdoors
             or playing boardgames with my friends.
           </p>
+        </div>
+        <div>
+          <Imagecarosel images={images}></Imagecarosel>
         </div>
       </div>
 
@@ -257,7 +256,7 @@ Software: Microsoft Office 365, Google Suite
         </div>
       </div>
 
-      <div>
+      <div id="contact" className="contact-container">
         {" "}
         <h1 id="contact" className="section_label2">
           Contact Me

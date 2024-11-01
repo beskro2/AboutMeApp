@@ -2,7 +2,7 @@
   text-align: center;
   font-family: "poppins", sans-serif;
 
-  background-color: #e8e8e8;
+  background-color: #fbf6ef;
 }
 htnl {
   scroll-behavior: smooth;
@@ -281,6 +281,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #dce0d9;
 }
 .organization {
   display: flex;
@@ -297,9 +298,9 @@ p {
   box-sizing: border-box;
   width: 1020px;
   height: 250px;
-  background: white /*#e8e8e8*/;
+  /* background: white;
   border: 3px solid grey;
-  border-radius: 17px;
+  border-radius: 17px;*/
   text-align: center;
   cursor: default;
   transition: all 0.5s;
@@ -396,6 +397,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #dce0d9;
 }
 .projectContainer {
   display: flex;
@@ -411,4 +413,8 @@ p {
   gap: 24px;
   margin: 0 auto;
   row-gap: 50px;
+}
+
+.contact-container {
+  height: 200px;
 }
