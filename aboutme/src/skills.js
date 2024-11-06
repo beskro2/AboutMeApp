@@ -1,12 +1,12 @@
 import React from "react";
 import "./Skills.css";
-import { FaLaptopCode } from "react-icons/fa";
 
-function Skills({ title }) {
+function Skills({ icon: Icon, title, description }) {
   return (
     <div className="skillscontainer">
-      <FaLaptopCode className="skillsicon" />
-      <h1 className="skillname">{title}</h1>
+      <Icon size={50} color="grey" />
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
   );
 }

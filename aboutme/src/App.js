@@ -13,8 +13,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Imagecarosel from "./imagecarosel.js";
 import Skills from "./Skills.js";
-import Pskills from "./ProfessionalSkills.js";
-
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaJava } from "react-icons/fa6";
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
 
@@ -48,7 +50,30 @@ Software: Microsoft Office 365, Google Suite
     "Backend to a hypothetical social media app. Application Includes endpoint creation, data persistence, and conventional data manipulation logic.";
   const MessageLink = "https://github.com/beskro2/beskro2-pep-spring-project";
   const codeskills = [
-    "HTML",
+    {
+      icon: FaHtml5,
+      title: "HTML",
+      description: "Hypertext Markup Language",
+    },
+    {
+      icon: IoLogoCss3,
+      title: "CSS",
+      description: "Cascading Style Sheets",
+    },
+    {
+      icon: IoLogoJavascript,
+      title: "Javascript",
+      description:
+        "versatile programming language primarily used for adding interactivity and dynamic behavior to web pages",
+    },
+    {
+      icon: FaJava,
+      title: "Java",
+      description:
+        "high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible",
+    },
+  ];
+  /* "HTML",
     "JavaScript",
     "CSS",
     "React",
@@ -57,19 +82,9 @@ Software: Microsoft Office 365, Google Suite
     "SQL",
     "Git",
     "Spring",
-  ];
+  */
   //zoom git hub git lab
-  const professionalskills = [
-    "Microsoft 360",
-    "Google Suite",
-    "Slack",
-    "Visual Studios",
-    "Problem Solving",
-    "Attention to Detail",
-    "Teamwork",
-    "Time Management",
-    "Adaptability",
-  ];
+
   return (
     <div className="App">
       <div className="first-section">
@@ -191,44 +206,38 @@ Software: Microsoft Office 365, Google Suite
       </div>
 
       <div id="about" className="aboutme-container">
-        <h1 className="section_label2">About Me</h1>
-        <div className="biocard">
-          <p>
-            Hello and welcome to my website. I’m Ben Eskro, a recent college
-            graduate with a passion for solving real world problems with
-            software solutions. Through my studies at North Dakota State
-            University, I developed a passion for creating user friendly
-            applications and honed my skills in front-end software development.
-            My evolution as a developer can be attributed to my love for
-            learning new things and my persistance in the face of failure. When
-            I’m not coding, you can find me gearing up to explore the outdoors
-            or playing boardgames with my friends.
-          </p>
-        </div>
-        <div>
+        <div className="bioOrganizer">
+          <div className="biocard">
+            <h1 className="section_label2">About Me</h1>
+            <p>
+              Hello and welcome to my website. I’m Ben Eskro, a recent college
+              graduate with a passion for solving real world problems with
+              software solutions. Through my studies at North Dakota State
+              University, I developed a passion for creating user friendly
+              applications and honed my skills in front-end software
+              development. My evolution as a developer can be attributed to my
+              love for learning new things and my persistance in the face of
+              failure. When I’m not coding, you can find me gearing up to
+              explore the outdoors or playing boardgames with my friends.
+            </p>
+          </div>
+
           <Imagecarosel images={images}></Imagecarosel>
         </div>
       </div>
 
       <div id="experience" className="experience-container">
         <h1 className="section_label2">My Experience</h1>
-        <div className="class-container">
-          <div className="classCard">
-            <h1 className="skillslabel"> Coding Skills </h1>
-            <div className="skillsbox">
-              {codeskills.map((item, index) => (
-                <Skills title={item} key={index}></Skills>
-              ))}
-            </div>
-          </div>
-          <div className="classCard">
-            <h1 className="skillslabel"> Professional skills </h1>
-            <div className="skillsbox">
-              {professionalskills.map((item, index) => (
-                <Pskills title={item} key={index}></Pskills>
-              ))}
-            </div>
-          </div>
+
+        <div className="skillsbox">
+          {codeskills.map((skill, index) => (
+            <Skills
+              icon={skill.icon}
+              title={skill.title}
+              description={skill.description}
+              key={index}
+            ></Skills>
+          ))}
         </div>
       </div>
 
