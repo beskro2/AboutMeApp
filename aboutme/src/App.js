@@ -58,12 +58,14 @@ Software: Microsoft Office 365, Google Suite
     {
       icon: FaHtml5,
       title: "HTML",
-      description: "Hypertext Markup Language",
+      description:
+        "standard markup language for documents designed to be displayed in a web browser",
     },
     {
       icon: IoLogoCss3,
       title: "CSS",
-      description: "Cascading Style Sheets",
+      description:
+        "style sheet language used for specifying the presentation and styling of a document",
     },
     {
       icon: IoLogoJavascript,
@@ -81,7 +83,7 @@ Software: Microsoft Office 365, Google Suite
       icon: FaDatabase,
       title: "SQL",
       description:
-        "Structured Query Language is a domain-specific language used to manage data, especially in a relational database management system.",
+        "Structured Query Language is used to manage data especially in a relational database management system.",
     },
     {
       icon: FaGitAlt,
@@ -298,7 +300,7 @@ Software: Microsoft Office 365, Google Suite
         <h1 id="contact" className="section_label2">
           Contact Me
         </h1>
-        <ContactMe></ContactMe>
+        <ContactMe />
       </div>
     </div>
   );

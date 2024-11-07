@@ -1,5 +1,4 @@
 .skillsContainer {
-  border: 2px solid black;
   height: 222px;
   width: 350px;
   display: flex;
@@ -7,8 +6,18 @@
   justify-content: left;
   align-items: baseline;
   text-align: left;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: default;
 }
+.skillsContainer:hover {
+  width: 360px;
+  height: 232px;
+}
+
 .skillsContainer:hover svg {
+  transition: all 0.3s ease;
+  overflow: hidden;
   color: black;
   width: 70px;
   height: 70px;
@@ -18,10 +27,16 @@
   font-weight: 500;
 }
 .skillsContainer svg {
+  transition: all 0.3s ease;
+  overflow: hidden;
   width: 50px;
   height: 50px;
   color: grey;
   display: "block";
   flex-shrink: 0;
   margin-top: 10px;
+}
+
+.skillsContainer p {
+  width: 344px;
 }

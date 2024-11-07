@@ -12,9 +12,13 @@
   border-radius: 17px;
   margin: 10px;
   overflow: hidden;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 .projectCard:hover {
   transform: translate3D(0, -1px, 0) scale(1.03);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .projectCard p {

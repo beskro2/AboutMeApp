@@ -1,16 +1,13 @@
-.contactzone {
-  display: flex;
-  justify-content: center;
-}
 .contactcard {
-  border: solid 2px black;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 500px;
+  width: 800px;
   border-radius: 17px;
   padding: 10px;
+  height: fit-content;
+  margin-right: 30px;
 }
 .texticongroup {
   display: flex;
@@ -19,6 +16,7 @@
 h1 {
   font-size: large;
   margin: 10px;
+  font-weight: 500;
 }
 .emailbutton {
   width: 46px;
@@ -42,11 +40,7 @@ h1 {
   border-width: 2px;
   color: black;
 }
-.emailicon {
-  height: 20px;
-  width: 20px;
-}
-.linkedicon {
+.contactIcon {
   height: 20px;
   width: 20px;
 }
