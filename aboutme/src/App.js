@@ -16,7 +16,12 @@ import Skills from "./Skills.js";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaJava } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa6";
+import { SiSpring } from "react-icons/si";
+
 function App() {
   const [menuOpen, changeMenuOpen] = useState(false);
 
@@ -71,6 +76,29 @@ Software: Microsoft Office 365, Google Suite
       title: "Java",
       description:
         "high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible",
+    },
+    {
+      icon: FaDatabase,
+      title: "SQL",
+      description:
+        "Structured Query Language is a domain-specific language used to manage data, especially in a relational database management system.",
+    },
+    {
+      icon: FaGitAlt,
+      title: "GIT",
+      description:
+        "Git is a distributed version control system that tracks versions of files.",
+    },
+    {
+      icon: FaReact,
+      title: "React",
+      description: "front-end JavaScript library for building user interfaces.",
+    },
+    {
+      icon: SiSpring,
+      title: "Spring",
+      description:
+        "application framework and inversion of control container for the Java platform.",
     },
   ];
   /* "HTML",

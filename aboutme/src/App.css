@@ -417,6 +417,7 @@ p {
   gap: 24px;
   margin: 0 auto;
   row-gap: 50px;
+  justify-content: center;
 }
 
 .contact-container {
