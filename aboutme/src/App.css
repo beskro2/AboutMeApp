@@ -136,7 +136,7 @@ p {
     display: none;
   }
 }
-
+/* intro section */
 .intro-container {
   height: 80vh;
   display: flex;
@@ -335,21 +335,6 @@ p {
   margin-left: 50px;
 }
 
-@media (max-width: 1300px) {
-  .aboutme-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .organization {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-}
-
 /*changes for intro section when wraps*/
 @media (max-width: 800px) {
   .intro-container {
@@ -424,4 +409,39 @@ p {
   height: 200px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1300px) {
+  .aboutme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .bioOrganizer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biocard {
+    width: 80vw;
+    margin-right: 0;
+  }
+
+  .section_label2 {
+    width: 50vw;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+  .experience-container {
+    height: 130vh;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
