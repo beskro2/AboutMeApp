@@ -40,3 +40,35 @@
 .skillsContainer p {
   width: 344px;
 }
+
+@media (max-width: 500px) {
+  .skillsContainer {
+    width: 150px;
+    height: auto;
+  }
+  .skillTitle {
+    font-size: large;
+    font-weight: 500;
+  }
+  .skillsContainer svg {
+    width: 20px;
+    height: 20px;
+  }
+  .skillsContainer p {
+    font-size: small;
+
+    width: 150px;
+  }
+  .skillsContainer:hover {
+    width: 160px;
+    height: auto;
+  }
+
+  .skillsContainer:hover svg {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: black;
+    width: 40px;
+    height: 40px;
+  }
+}

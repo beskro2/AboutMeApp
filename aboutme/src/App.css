@@ -4,9 +4,7 @@
 
   background-color: #fbf6ef;
 }
-htnl {
-  scroll-behavior: smooth;
-}
+
 p {
   color: rgb(0, 0, 0);
 }
@@ -386,6 +384,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: left;
   background-color: #fbf6ef;
 }
 .projectContainer {
@@ -412,7 +411,14 @@ p {
 }
 
 @media (max-width: 1300px) {
+  .section_label2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+  }
   .aboutme-container {
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,10 +444,85 @@ p {
   }
   .experience-container {
     height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
   }
-
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
   .projectContainer {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+/* change format for phone use*/
+@media (max-width: 500px) {
+  /*into*/
+  .intro-container {
+    height: 100vh;
+  }
+  .upperbutton {
+    height: auto;
+  }
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .textone {
+    margin: 2px;
+    font-size: 1.5rem;
+    cursor: default;
+    font-weight: 500;
+  }
+
+  .texttwo {
+    margin: 2px;
+    font-size: 3rem;
+    font-weight: 600;
+    cursor: default;
+  }
+
+  .textthree {
+    margin: 2px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: default;
+  }
+
+  /*bio*/
+
+  .imageCarosel {
+    width: 80vw;
+  }
+  .section_label2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .biocard {
+    width: 95vw;
+  }
+  .biocard p {
+    line-height: normal;
+    font-size: smaller;
+    margin: auto;
+  }
+
+  /*skills*/
+  .skillsbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 auto;
+    row-gap: 20px;
+    justify-content: center;
   }
 }

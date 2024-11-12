@@ -117,119 +117,114 @@ Software: Microsoft Office 365, Google Suite
 
   return (
     <div className="App">
-      <div className="first-section">
-        <nav id="desktop-nav">
-          <div className="menu-container">
-            <h1 className="title">Ben Eskro</h1>
+      <nav id="desktop-nav">
+        <div className="menu-container">
+          <h1 className="title">Ben Eskro</h1>
 
-            <div>
-              <ul className="nav-links">
-                <li>
-                  <a className="nav-link" href="#about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="#experience">
-                    Experience
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="#projects">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="#contact">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div>
+            <ul className="nav-links">
+              <li>
+                <a className="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="#experience">
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="#projects">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <nav id="hamburger-nav">
-          <div className="title">
-            <h1>Ben Eskro</h1>
-          </div>
+      <nav id="hamburger-nav">
+        <div className="title">
+          <h1>Ben Eskro</h1>
+        </div>
 
-          <label class="burger" for="burger">
-            <input
-              type="checkbox"
-              checked={menuOpen}
-              id="burger"
-              onChange={toggleMenu}
-            />
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          {/* */}
-        </nav>
-        {menuOpen && (
-          <ul className="hamburgerNav-links">
-            <li>
-              <a className="nav-link" href="#about" onClick={toggleMenu}>
-                About
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#experience" onClick={toggleMenu}>
-                Experience
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#projects" onClick={toggleMenu}>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#contact" onClick={toggleMenu}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        )}
+        <label class="burger" for="burger">
+          <input
+            type="checkbox"
+            checked={menuOpen}
+            id="burger"
+            onChange={toggleMenu}
+          />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        {/* */}
+      </nav>
+      {menuOpen && (
+        <ul className="hamburgerNav-links">
+          <li>
+            <a className="nav-link" href="#about" onClick={toggleMenu}>
+              About
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href="#experience" onClick={toggleMenu}>
+              Experience
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href="#projects" onClick={toggleMenu}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href="#contact" onClick={toggleMenu}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      )}
 
-        <div className="intro-container">
-          <div className="image-container">
-            <img
-              src={myImage}
-              className="circle-image"
-              alt="professional headshot"
-            />
-          </div>
+      <div className="intro-container">
+        <div className="image-container">
+          <img
+            src={myImage}
+            className="circle-image"
+            alt="professional headshot"
+          />
+        </div>
 
-          <div className="info-container">
-            <h1 className="textone">Hello, I'm</h1>
-            <h1 className="texttwo">Ben Eskro</h1>
-            <h1 className="textthree">Software Developer</h1>
+        <div className="info-container">
+          <h1 className="textone">Hello, I'm</h1>
+          <h1 className="texttwo">Ben Eskro</h1>
+          <h1 className="textthree">Software Developer</h1>
 
-            <div className="butContainer">
-              <div className="upperbutton">
-                <button className="largebtn" onClick={handleDownload}>
-                  Download Resume
+          <div className="butContainer">
+            <div className="upperbutton">
+              <button className="largebtn" onClick={handleDownload}>
+                Download Resume
+              </button>
+
+              <a href="https://github.com/beskro2" target="_blank">
+                <button class="smallbtn">
+                  <FaGithub className="giticon" />
                 </button>
+              </a>
+            </div>
 
-                <a href="https://github.com/beskro2" target="_blank">
-                  <button class="smallbtn">
-                    <FaGithub className="giticon" />
-                  </button>
-                </a>
-              </div>
-
-              <div className="lowerbuttons">
-                <a
-                  href="https://www.linkedin.com/in/ben-eskro/"
-                  target="_blank"
-                >
-                  <button class="smallbtn">
-                    <FaLinkedinIn className="linkedicon" />
-                  </button>
-                </a>
-                <button className="largebtn">Contact Me</button>
-              </div>
+            <div className="lowerbuttons">
+              <a href="https://www.linkedin.com/in/ben-eskro/" target="_blank">
+                <button class="smallbtn">
+                  <FaLinkedinIn className="linkedicon" />
+                </button>
+              </a>
+              <button className="largebtn">Contact Me</button>
             </div>
           </div>
         </div>
@@ -252,12 +247,12 @@ Software: Microsoft Office 365, Google Suite
             </p>
           </div>
 
-          <Imagecarosel images={images}></Imagecarosel>
+          <Imagecarosel className="imageCarosel" images={images}></Imagecarosel>
         </div>
       </div>
 
       <div id="experience" className="experience-container">
-        <h1 className="section_label2">My Experience</h1>
+        <h1 className="section_label2">Experience</h1>
 
         <div className="skillsbox">
           {codeskills.map((skill, index) => (
@@ -272,7 +267,7 @@ Software: Microsoft Office 365, Google Suite
       </div>
 
       <div id="projects" className="project-container">
-        <h1 className="section_label2">My Projects</h1>
+        <h1 className="section_label2">Projects</h1>
         <div className="projectContainer">
           <ProjectCard
             title={DnDtitle}
