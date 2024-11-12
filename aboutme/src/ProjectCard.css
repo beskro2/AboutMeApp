@@ -61,3 +61,18 @@
   max-height: -webkit-fill-available;
   object-fit: cover;
 }
+
+@media (max-width: 500px) {
+  .projectCard {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background-color: #fbf6ef;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    margin: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+}

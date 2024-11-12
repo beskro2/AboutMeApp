@@ -517,6 +517,10 @@ p {
   }
 
   /*skills*/
+  .experience-container {
+    height: fit-content;
+  }
+
   .skillsbox {
     display: flex;
     flex-wrap: wrap;
@@ -524,5 +528,25 @@ p {
     margin: 0 auto;
     row-gap: 20px;
     justify-content: center;
+  }
+
+  /*projects*/
+  .project-container {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  /*Contactme*/
+  .contact-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

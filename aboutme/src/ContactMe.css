@@ -44,3 +44,25 @@ h1 {
   height: 20px;
   width: 20px;
 }
+@media (max-width: 500px) {
+  .contactcard {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 17px;
+    padding: 10px;
+    height: fit-content;
+    margin-right: 30px;
+  }
+
+  .contactIcon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .texticongroup {
+    margin: 5px;
+  }
+}

@@ -59,25 +59,25 @@ Software: Microsoft Office 365, Google Suite
       icon: FaHtml5,
       title: "HTML",
       description:
-        "standard markup language for documents designed to be displayed in a web browser",
+        "Standard markup language for documents designed to be displayed in a web browser.",
     },
     {
       icon: IoLogoCss3,
       title: "CSS",
       description:
-        "style sheet language used for specifying the presentation and styling of a document",
+        "Style sheet language used for specifying the presentation and styling of a document.",
     },
     {
       icon: IoLogoJavascript,
       title: "Javascript",
       description:
-        "versatile programming language primarily used for adding interactivity and dynamic behavior to web pages",
+        "Versatile programming language used for adding interactivity and dynamic behavior to web pages.",
     },
     {
       icon: FaJava,
       title: "Java",
       description:
-        "high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible",
+        "High-level, class-based, object-oriented programming language.",
     },
     {
       icon: FaDatabase,
@@ -94,13 +94,13 @@ Software: Microsoft Office 365, Google Suite
     {
       icon: FaReact,
       title: "React",
-      description: "front-end JavaScript library for building user interfaces.",
+      description: "Front-end JavaScript library for building user interfaces.",
     },
     {
       icon: SiSpring,
       title: "Spring",
       description:
-        "application framework and inversion of control container for the Java platform.",
+        "Application framework and inversion of control container for the Java platform.",
     },
   ];
   /* "HTML",
