@@ -65,4 +65,10 @@ h1 {
   .texticongroup {
     margin: 5px;
   }
+  .emailbutton:hover {
+    background-color: black;
+    border: solid;
+    border-width: 2px;
+    color: white;
+  }
 }

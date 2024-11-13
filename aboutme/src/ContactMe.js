@@ -25,7 +25,7 @@ function ContactMe() {
             <FaLinkedinIn className="contactIcon" />
           </button>
         </a>
-        <h1>www.linkedin.com/in/ben-eskro</h1>
+        <h1>Linkedin</h1>
       </div>
       <div className="texticongroup">
         <button className="emailbutton" onClick={handleClick}>
