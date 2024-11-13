@@ -19,7 +19,7 @@ p {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 .title:hover {
@@ -332,6 +332,12 @@ p {
   margin-bottom: 30px;
   margin-left: 50px;
 }
+.section_label3 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
 
 /*changes for intro section when wraps*/
 @media (max-width: 800px) {
@@ -460,6 +466,10 @@ p {
     align-items: flex-start;
   }
 }
+
+@media (max-width: 950px) {
+}
+
 /* change format for phone use*/
 @media (max-width: 500px) {
   /*buttons */

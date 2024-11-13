@@ -103,17 +103,6 @@ Software: Microsoft Office 365, Google Suite
         "Application framework and inversion of control container for the Java platform.",
     },
   ];
-  /* "HTML",
-    "JavaScript",
-    "CSS",
-    "React",
-    "Angular",
-    "Java",
-    "SQL",
-    "Git",
-    "Spring",
-  */
-  //zoom git hub git lab
 
   return (
     <div className="App">
@@ -252,7 +241,7 @@ Software: Microsoft Office 365, Google Suite
       </div>
 
       <div id="experience" className="experience-container">
-        <h1 className="section_label2">Experience</h1>
+        <h1 className="section_label3">Experience</h1>
 
         <div className="skillsbox">
           {codeskills.map((skill, index) => (
@@ -267,7 +256,7 @@ Software: Microsoft Office 365, Google Suite
       </div>
 
       <div id="projects" className="project-container">
-        <h1 className="section_label2">Projects</h1>
+        <h1 className="section_label3">Projects</h1>
         <div className="projectContainer">
           <ProjectCard
             title={DnDtitle}
