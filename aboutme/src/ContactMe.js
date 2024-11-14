@@ -17,7 +17,7 @@ function ContactMe() {
         >
           <MdEmail className="contactIcon" />
         </button>
-        <h1> eskroben@gmail.com </h1>
+        <h1 className="contactTitle"> eskroben@gmail.com </h1>
       </div>
       <div className="texticongroup">
         <a href="https://www.linkedin.com/in/ben-eskro/" target="_blank">
@@ -25,14 +25,14 @@ function ContactMe() {
             <FaLinkedinIn className="contactIcon" />
           </button>
         </a>
-        <h1>Linkedin</h1>
+        <h1 className="contactTitle">Linkedin</h1>
       </div>
       <div className="texticongroup">
         <button className="emailbutton" onClick={handleClick}>
           <IoIosCall className="contactIcon" />
         </button>
 
-        <h1> (763) 406-6071</h1>
+        <h1 className="contactTitle"> (763) 406-6071</h1>
       </div>
     </div>
   );

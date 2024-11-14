@@ -108,7 +108,7 @@ Software: Microsoft Office 365, Google Suite
     <div className="App">
       <nav id="desktop-nav">
         <div className="menu-container">
-          <h1 className="title">Ben Eskro</h1>
+          <h1 className="barTitle">Ben Eskro</h1>
 
           <div>
             <ul className="nav-links">
@@ -138,9 +138,7 @@ Software: Microsoft Office 365, Google Suite
       </nav>
 
       <nav id="hamburger-nav">
-        <div className="title">
-          <h1>Ben Eskro</h1>
-        </div>
+        <h1 className="burgerTitle">Ben Eskro</h1>
 
         <label class="burger" for="burger">
           <input
@@ -222,7 +220,7 @@ Software: Microsoft Office 365, Google Suite
       <div id="about" className="aboutme-container">
         <div className="bioOrganizer">
           <div className="biocard">
-            <h1 className="section_label2">About Me</h1>
+            <h1 className="section_label1">About Me</h1>
             <p>
               Hello and welcome to my website. I’m Ben Eskro, a recent college
               graduate with a passion for solving real world problems with

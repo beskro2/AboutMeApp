@@ -18,9 +18,10 @@ p {
   height: 17vh;
 }
 
-.title {
+.barTitle {
   font-size: 3rem;
   font-weight: 400;
+  padding-bottom: 18px;
 }
 .title:hover {
   cursor: default;
@@ -54,6 +55,7 @@ p {
   background: transparent;
   cursor: pointer;
   display: block;
+  margin-top: 45px;
 }
 
 .burger input {
@@ -116,24 +118,6 @@ p {
   display: none;
 }
 
-/*hamburger menu visible when screen less than 1000px*/
-@media (max-width: 1000px) {
-  #hamburger-nav {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-  }
-  .hamburgerNav-links {
-    display: block;
-    list-style: none;
-    font-size: 1.5rem;
-    gap: 3rem;
-  }
-
-  #desktop-nav {
-    display: none;
-  }
-}
 /* intro section */
 .intro-container {
   height: 80vh;
@@ -275,12 +259,13 @@ p {
 /*aboutme section*/
 
 .aboutme-container {
-  height: 110vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fbf6ef;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .organization {
   display: flex;
@@ -324,45 +309,37 @@ p {
   font-weight: 400;
 }
 
+.section_label1 {
+  width: 50vw;
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
 .section_label2 {
   width: 50vw;
   text-align: left;
   font-size: 5rem;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-weight: 400;
+  margin-bottom: 70px;
   margin-left: 50px;
 }
+
 .section_label3 {
   font-size: 5rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30px;
-  margin-left: 50px;
-}
-
-/*changes for intro section when wraps*/
-@media (max-width: 800px) {
-  .intro-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-container {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
-  }
 }
 
 /*experience section*/
 
 .experience-container {
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 .class-container {
   display: flex;
@@ -393,6 +370,7 @@ p {
   justify-content: left;
   background-color: #fbf6ef;
 }
+
 .projectContainer {
   display: flex;
   flex-direction: row;
@@ -418,10 +396,19 @@ p {
 
 @media (max-width: 1300px) {
   .section_label2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+  .section_label3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 500;
   }
   .aboutme-container {
     width: auto;
@@ -440,16 +427,8 @@ p {
     margin-right: 0;
   }
 
-  .section_label2 {
-    width: 50vw;
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-    margin-left: 0px;
-  }
   .experience-container {
-    height: 130vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -460,14 +439,94 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    height: fit-content;
   }
   .projectContainer {
-    flex-direction: column;
     align-items: flex-start;
+  }
+  /*Contactme*/
+  .contact-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1110px) {
+  .project-container {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
+/*hamburger menu visible when screen less than 1000px*/
+@media (max-width: 1000px) {
+  .burgerTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 18px;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .hamburgerNav-links {
+    display: block;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  #desktop-nav {
+    display: none;
   }
 }
 
-@media (max-width: 950px) {
+/*changes for intro section when wraps*/
+@media (max-width: 800px) {
+  .intro-container {
+    height: fit-content;
+    margin-bottom: 80px;
+  }
+  .textone {
+    margin: 2px;
+  }
+  .texttwo {
+    margin: 2px;
+  }
+  .textthree {
+    margin: 2px;
+    margin-bottom: 30px;
+  }
+
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+  }
+  .upperbutton {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+  }
 }
 
 /* change format for phone use*/
@@ -529,6 +588,7 @@ p {
     text-align: center;
     font-size: 1.5rem;
   }
+
   .biocard {
     width: 95vw;
   }

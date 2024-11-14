@@ -41,14 +41,6 @@
   align-items: baseline;
 }
 
-.projectContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
 .imagecontainer {
   position: relative;
   width: 100%;
