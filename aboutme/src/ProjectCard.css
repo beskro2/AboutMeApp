@@ -6,7 +6,7 @@
   box-sizing: border-box;
   width: 350px;
   height: 400px;
-  background-color: #fbf6ef;
+  background-color: #ffffff;
   backdrop-filter: blur(6px);
   border-radius: 17px;
   margin: 10px;
@@ -59,7 +59,7 @@
     box-sizing: border-box;
     width: 300px;
     height: 400px;
-    background-color: #fbf6ef;
+    background-color: #e7e7e6;
     backdrop-filter: blur(6px);
     border-radius: 17px;
     margin: 10px;
