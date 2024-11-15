@@ -315,7 +315,6 @@ p {
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 30px;
-  margin-left: 50px;
 }
 
 .section_label2 {
@@ -580,6 +579,18 @@ p {
 
   .imageCarosel {
     width: 80vw;
+  }
+  .section_label1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .section_label3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
   }
   .section_label2 {
     display: flex;
