@@ -1,5 +1,5 @@
 .skillsContainer {
-  height: 222px;
+  height: 260px;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
 }
 .skillsContainer:hover {
   width: 360px;
-  height: 232px;
+  height: 260px;
 }
 
 .skillsContainer:hover svg {

@@ -124,6 +124,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .App-header {
@@ -265,7 +266,7 @@ p {
   align-items: center;
 
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 110px;
 }
 .organization {
   display: flex;
@@ -315,6 +316,7 @@ p {
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 30px;
+  margin-left: 42px;
 }
 
 .section_label2 {
@@ -338,7 +340,7 @@ p {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 .class-container {
   display: flex;
@@ -363,10 +365,11 @@ p {
 }
 /*project section*/
 .project-container {
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  margin-bottom: 110px;
 }
 
 .projectContainer {
@@ -430,7 +433,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 40px;
   }
   .project-container {
     display: flex;
@@ -543,7 +546,8 @@ p {
   }
   /*into*/
   .intro-container {
-    height: 100vh;
+    height: fit-content;
+    margin-bottom: 100px;
   }
   .upperbutton {
     height: auto;
