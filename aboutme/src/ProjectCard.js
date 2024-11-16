@@ -12,7 +12,7 @@ function ProjectCard({ title, description, picture, link }) {
       <p>{description}</p>
 
       <div className="test">
-        <a href={link} target="_blank">
+        <a href={link}>
           <button className="largebtn">github</button>
         </a>
       </div>

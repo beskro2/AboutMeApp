@@ -20,7 +20,7 @@ function ContactMe() {
         <h1 className="contactTitle"> eskroben@gmail.com </h1>
       </div>
       <div className="texticongroup">
-        <a href="https://www.linkedin.com/in/ben-eskro/" target="_blank">
+        <a href="https://www.linkedin.com/in/ben-eskro/">
           <button class="smallbtn">
             <FaLinkedinIn className="contactIcon" />
           </button>

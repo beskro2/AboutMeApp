@@ -7,7 +7,6 @@ import { images } from "./data.js";
 import DnDPic from "./Images/D&Dbanner.jpeg";
 import CapPic from "./Images/user-hard-hat.png";
 import MessagePic from "./Images/message-image.webp";
-import image3 from "./Images/IMG_5186.jpg";
 import ContactMe from "./ContactMe.js";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -198,7 +197,7 @@ Software: Microsoft Office 365, Google Suite
                 Download Resume
               </button>
 
-              <a href="https://github.com/beskro2" target="_blank">
+              <a href="https://github.com/beskro2">
                 <button class="smallbtn">
                   <FaGithub className="giticon" />
                 </button>
@@ -206,7 +205,7 @@ Software: Microsoft Office 365, Google Suite
             </div>
 
             <div className="lowerbuttons">
-              <a href="https://www.linkedin.com/in/ben-eskro/" target="_blank">
+              <a href="https://www.linkedin.com/in/ben-eskro/">
                 <button class="smallbtn">
                   <FaLinkedinIn className="linkedicon" />
                 </button>
